@@ -114,4 +114,3 @@ function Salario() {
   } 
 
   export default Salario;
-  

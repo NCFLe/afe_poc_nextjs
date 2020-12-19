@@ -29,19 +29,19 @@ const ProgressLine = ({
   return (
     <>
     <div className="progressLabel">{label}</div>
-        <div className="progressVisualFull" style={{ backgroundColor }}>
-        {visualParts.map((item, index) => {
-            return (
-            <div
-                key={index}
-                style={{
-                width: widths[index],
-                backgroundColor: item.color
-                }}
-                className="progressVisualPart"
-            />
-            );
-        })}
+    <div className="progressVisualFull" style={{ backgroundColor }}>
+      {visualParts.map((item, index) => {
+        return (
+        <div
+          key={index}
+          style={{
+          width: widths[index],
+          backgroundColor: item.color
+          }}
+          className="progressVisualPart"
+        />
+        );
+      })}
     </div>
     <style jsx>{`
       .progressVisualFull {

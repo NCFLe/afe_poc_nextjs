@@ -1,35 +1,22 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 export default function Home(props) {
   console.log("data", props);
   return (
     <div className="container">
       <Head>
-        <title>POC Next</title>
+        <title>NextJs Poc</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div className="grid">
-
-          {/* <Link href="/salario" className="card">
-            Salário
-          </Link> */}
-          
           <a href="/salario" className="card">
             <h3>Salário &rarr;</h3>
             <p>Calcule aqui o valor líquido do seu salário.</p>
           </a>
-
-          {/* <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a> */}
-
         </div>
       </main>
-
 
       <style jsx>{`
         .container {
@@ -160,12 +147,3 @@ export default function Home(props) {
     </div>
   )
 }
-
-// Home.getInitialProps = async function() {
-//   // Posts
-//   const res = await fetch('https://www.reddit.com/r/javascript.json');
-//   const data = await res.json();
-//   return {
-//     data
-//   } 
-// }

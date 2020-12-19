@@ -102,4 +102,3 @@ const INSS_TABLE = [
   }
   
   export { calculateSalaryFrom };
-  
